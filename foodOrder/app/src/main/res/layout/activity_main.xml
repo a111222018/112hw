@@ -8,6 +8,33 @@
     tools:context=".MainActivity">
 
     <CheckBox
+        android:id="@+id/chk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:text="@string/corn_soup"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/icon3"
+        app:layout_constraintTop_toBottomOf="@+id/chk2"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/icon5"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chk5"
+        app:layout_constraintStart_toEndOf="@+id/chk5"
+        app:layout_constraintTop_toTopOf="@+id/chk5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/coffee"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <CheckBox
         android:id="@+id/chk1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,16 +77,15 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/chk4"
+        android:id="@+id/chk5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="8dp"
         android:checked="false"
-        android:text="@string/corn_soup"
+        android:text="@string/coffee"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@+id/icon3"
-        app:layout_constraintTop_toBottomOf="@+id/chk2"
+        app:layout_constraintStart_toStartOf="@+id/chk3"
+        app:layout_constraintTop_toBottomOf="@+id/chk3"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
@@ -106,11 +132,13 @@
         android:id="@+id/icon4"
         android:layout_width="30dp"
         android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toBottomOf="@+id/chk4"
         app:layout_constraintLeft_toRightOf="@+id/chk4"
         app:layout_constraintTop_toTopOf="@+id/chk4"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@mipmap/soup"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintTop_creator="1" />
@@ -119,16 +147,15 @@
         android:id="@+id/showOrder"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:text="請點餐"
         android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chk3"
+        app:layout_constraintTop_toBottomOf="@+id/chk5"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
@@ -182,6 +209,16 @@
             android:layout_weight="1"
             android:visibility="gone"
             app:srcCompat="@mipmap/soup"
+            tools:layout_editor_absoluteX="196dp"
+            tools:layout_editor_absoluteY="197dp" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/coffee"
             tools:layout_editor_absoluteX="196dp"
             tools:layout_editor_absoluteY="197dp" />
     </LinearLayout>
